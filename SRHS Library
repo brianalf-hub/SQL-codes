@@ -1,0 +1,11 @@
+# Basic codes for creating a TABLE in a DATABASE in PostgreSQL
+# This one is for creating a databas for the Santa Rosa High School Libraries
+
+CREATE TABLE [IF NOT EXISTS] SRHS_PowerSchool (
+   Grade character(2) NOT NULL,
+   StudentID numeric(9) UNIQUE,
+   LastName varchar(50) NOT NULL,
+   FirstName varchar(50) NOT NULL,
+   School varchar(50) NOT NULL,
+   table_constraints
+);
