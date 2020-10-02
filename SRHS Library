@@ -1,11 +1,29 @@
 # Basic codes for creating a TABLE in a DATABASE in PostgreSQL
 # This one is for creating a databas for the Santa Rosa High School Libraries
 
-CREATE TABLE [IF NOT EXISTS] SRHS_PowerSchool (
+CREATE DATABASE "SRHSLibrary"
+    WITH 
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'English_United States.1252'
+    LC_CTYPE = 'English_United States.1252'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;
+	
+CREATE TABLE IF NOT EXISTS SRHS_PowerSchool (
    Grade character(2) NOT NULL,
    StudentID SERIAL,
    LastName varchar(50) NOT NULL,
    FirstName varchar(50) NOT NULL,
    School varchar(50) NOT NULL,
    PRIMARY KEY (StudentID)
+);
+
+CREATE TABLE IF NOT EXISTS SRHS_GoogleAdmin (
+   LastName varchar(50) NOT NULL,
+   FirstName varchar(50) NOT NULL,
+   Email varchar(50)  NOT NULL,
+   StudentID SERIAL,
+   PRIMARY KEY (StudentID)
+	
 );
