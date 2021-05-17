@@ -34,3 +34,18 @@ Keyword PRIMARY KEY is used to define a column as a primary key. You can use mul
 
 #######################################################################################################################################
 
+USE tutorials_tbl;
+
+SELECT
+   field_1,
+   field_2,
+   field_3,
+FROM table_name
+--WHERE field_3 = set of values
+
+--ORDER BY submission_date
+
+#######################################################################################################################################
+
+
+
