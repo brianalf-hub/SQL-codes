@@ -56,6 +56,10 @@ SELECT *
 FROM table_name
 WHERE field_1 NOT IN ("name1", "name3", "name6")
 
+SELECT * 
+FROM table_name
+WHERE field_1 LIKE "%SON% OR field_1 LIKE "%RIC%"
+
 #######################################################################################################################################
 
 
