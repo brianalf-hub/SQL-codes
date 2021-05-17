@@ -52,15 +52,24 @@ FROM table_name
 
 #######################################################################################################################################
 
+--Using the NOT operator
 SELECT * 
 FROM table_name
 WHERE field_1 NOT IN ("name1", "name3", "name6")
 
+--Using the LIKE operator
 SELECT * 
 FROM table_name
-WHERE field_1 LIKE "%SON% OR field_1 LIKE "%RIC%"
+WHERE field_1 LIKE "%SON% OR 
+      field_1 LIKE "%RIC%"
+
+
 
 #######################################################################################################################################
+-- REGEXP (regular expression)
+SELECT *
+FROM table_name
+WHERE field_1 REGEXP
 
 
 
