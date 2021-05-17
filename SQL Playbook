@@ -41,11 +41,18 @@ SELECT
    field_2,
    field_3,
 FROM table_name
---WHERE field_3 = set of values
+
+
+--WHERE field_3 > 100
+--WHERE field_2 = "field_2_name"   
 
 --ORDER BY submission_date
 
+--AND, OR, NOT operators
+
 #######################################################################################################################################
+
+
 
 
 
