@@ -77,4 +77,23 @@ FROM table_name
 --WHERE field_1 REGEXP "x[yz]"
 
 
+#######################################################################################################################################
+
+--NULL operator
+
+-- ORDER BY
+SELECT *
+FROM table_name
+ORDER BY field_1 
+ --Descending order:
+ --ORDER BY field_1 DESC
+ -- You can order by two or more attributes as well
+ 
+ --LIMIT operator
+SELECT *
+FROM table_name
+
+
+ 
+
 
