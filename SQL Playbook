@@ -69,7 +69,12 @@ WHERE field_1 LIKE "%SON% OR
 -- REGEXP (regular expression)
 SELECT *
 FROM table_name
-WHERE field_1 REGEXP
+
+-- field_1 starts if AB or contains CD
+--WHERE field_1 REGEXP "^AB|CD"
+
+-- field_1 contains x and followed by yz
+--WHERE field_1 REGEXP "x[yz]"
 
 
 
